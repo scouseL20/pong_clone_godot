@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://dc2glijequex4"]
 
-[ext_resource type="PackedScene" uid="uid://bmuemfod0d6dg" path="res://left_paddle.tscn" id="1_ig7tw"]
-[ext_resource type="PackedScene" uid="uid://cw7qtbcqhpn8a" path="res://right_paddle.tscn" id="2_0xm2m"]
-[ext_resource type="PackedScene" uid="uid://cfnrgax2516r6" path="res://ball.tscn" id="3_h2yge"]
+[ext_resource type="PackedScene" uid="uid://bmuemfod0d6dg" path="res://paddles/left_paddle.tscn" id="1_sugp2"]
+[ext_resource type="PackedScene" uid="uid://cw7qtbcqhpn8a" path="res://paddles/right_paddle.tscn" id="2_jyhfs"]
+[ext_resource type="PackedScene" uid="uid://cfnrgax2516r6" path="res://ball.tscn" id="3_tbgi4"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_h2yge"]
 
@@ -24,10 +24,10 @@ size = Vector2(1207.5, 20)
 
 [node name="paddles" type="Node" parent="." unique_id=1085674983]
 
-[node name="left_paddle" parent="paddles" unique_id=1677016890 instance=ExtResource("1_ig7tw")]
+[node name="left_paddle" parent="paddles" unique_id=1677016890 instance=ExtResource("1_sugp2")]
 position = Vector2(-507, 0)
 
-[node name="right_paddle" parent="paddles" unique_id=87720271 instance=ExtResource("2_0xm2m")]
+[node name="right_paddle" parent="paddles" unique_id=87720271 instance=ExtResource("2_jyhfs")]
 position = Vector2(515, 0)
 
 [node name="borders" type="Node" parent="." unique_id=310083170]
@@ -58,7 +58,7 @@ shape = SubResource("RectangleShape2D_c2fdl")
 position = Vector2(2.75, 334)
 shape = SubResource("RectangleShape2D_gmkfl")
 
-[node name="ball" parent="." unique_id=485498800 instance=ExtResource("3_h2yge")]
+[node name="ball" parent="." unique_id=485498800 instance=ExtResource("3_tbgi4")]
 position = Vector2(2, 2)
 collision_mask = 3
 
