@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://bmuemfod0d6dg"]
+
+[ext_resource type="Script" uid="uid://dmkj8t78br8hl" path="res://left_paddle.gd" id="1_03875"]
+[ext_resource type="Texture2D" uid="uid://c62qo8nfhqoyq" path="res://icon.svg" id="1_wlu2s"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ws83t"]
+size = Vector2(123, 313)
+
+[node name="left_paddle" type="CharacterBody2D" unique_id=609095199]
+visibility_layer = 2
+collision_layer = 2
+script = ExtResource("1_03875")
+speed = 400.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1733349345]
+visibility_layer = 2
+position = Vector2(0.25, -0.26)
+scale = Vector2(0.5, 0.52)
+shape = SubResource("RectangleShape2D_ws83t")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1642084465]
+visibility_layer = 2
+scale = Vector2(0.5, 1.3)
+texture = ExtResource("1_wlu2s")
